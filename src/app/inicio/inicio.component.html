@@ -31,7 +31,7 @@
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="/inicio/procesoventas" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Dashboard Ventas</a>
-              <a href="/inicio/procesoventas" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Dashboard Compras</a>
+              <a href="/inicio/procesocompras" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Dashboard Compras</a>
             </div>
           </div>
         </div>
@@ -47,11 +47,11 @@
           <!-- Profile dropdown -->
           <div class="relative ml-3">
             <div>
-              <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+              <a href="/" type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                 <span class="absolute -inset-1.5"></span>
                 <span class="sr-only">Open user menu</span>
                 <a href="/" class="text-white">Salir</a>
-              </button>
+              </a>
             </div>
   
             <!--
@@ -69,19 +69,9 @@
         </div>
       </div>
     </div>
-  
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
-      <div class="space-y-1 px-2 pb-3 pt-2">
-        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
-      </div>
-    </div>
+
   </nav>
 
   <div class="flex justify-center items-center h-[90vh]">
-    <iframe title="SAN MATHIAS VENTAS POWER BI INTELIGENTE NEGOCIOS" width="1540" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=bdbf12e3-c18e-4b6b-ae90-1a91bdb9bc8b&autoAuth=true&ctid=8c0e2d65-5618-49e9-a0c2-28fec65ef2a8" frameborder="0" allowFullScreen="true"></iframe>
+  <router-outlet></router-outlet>
   </div>
